@@ -1,3 +1,7 @@
+terraform {
+  experiments = [variable_validation]
+}
+
 variable "enable_cluster_autoscaler" {
   type        = bool
   description = "(Deprecated, use `cluster_autoscaler_enabled`) Set true to allow Kubernetes Cluster Auto Scaler to scale the node group"
